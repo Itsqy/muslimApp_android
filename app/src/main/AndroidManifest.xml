@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trq.muslimapp">
+    <!-- ACCESS INTERNET -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Qiblah Finder -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MuslimApp"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".splashscreen.Splashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.profile.updateprofile.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.admin.activity.OtherMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.admin.activity.DetailUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.admin.activity.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profile.changepassword.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.profile.updateprofile.UpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.doaharian.DoaHarianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.note.UpdateNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.khutbah.DetailKhutbahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.note.AddNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.khutbah.KhutbahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.berita.activity.DetailBeritaActivity"
+            android:exported="false"
+            android:label="@string/title_activity_detail_berita"
+            android:theme="@style/Theme.MuslimApp.NoActionBar" />
+        <activity
+            android:name=".auth.ui.AuthActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.home.qiblah.QiblahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.jadwalsholat.JadwalSholatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.tasbih.TasbihActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.quran.DetailSurahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.quran.SurahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.hijriyah.HijriyahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.zakat.ZakatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MuslimApp.NoActionBar">
+
+        </activity>
+    </application>
+
+</manifest>
